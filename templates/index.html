@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Gemini Chat</title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>  
+        $(document).ready(function() {  
+            $("#send_button").click(function() {  
+                var user_input = $("#user_input").val();  
+                $.ajax({  
+                    type: "POST",  
+                    url: "/get_response",  
+                    data: { user_input: user_input },  
+                    success: function(response) {  
+                        $("#chat_area").append("<p><b>You:</b> " + user_input + "</p>");  
+                        $("#chat_area").append("<p><b>Gemini:</b> " + response + "</p>");  
+                        $("#user_input").val(""); // Clear input field  
+                    }  
+                });  
+            });  
+        });  
+    </script>  
+</head>  
+<body>  
+    <h1>Gemini Chat</h1>  
+    <div id="chat_area">  
+        </div>  
+    <input type="text" id="user_input" placeholder="Type your message here">  
+    <button id="send_button">Send</button>  
+</body>  
+</html>
