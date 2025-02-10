@@ -4,11 +4,11 @@
 
 ## 项目特性  
 
-*   **双模式支持:**  提供控制台和网页两种交互方式，满足不同场景的需求。  
-*   **Google Gemini API 驱动:**  基于 Google Gemini API 的强大能力，提供高质量的自然语言处理能力。  
-*   **简洁易用:**  代码结构清晰，易于理解和定制。  
-*   **安全配置:**  API Key 安全存储，避免敏感信息泄露。  
-*   **可扩展性:**  易于扩展新的功能和特性。  
+*   **双模式支持:** 提供控制台和网页两种交互方式，满足不同场景的需求。  
+*   **Google Gemini API 驱动:** 基于 Google Gemini API 的强大能力，提供高质量的自然语言处理能力。  
+*   **简洁易用:** 代码结构清晰，易于理解和定制。  
+*   **安全配置:** API Key 安全存储，避免敏感信息泄露。  
+*   **可扩展性:** 易于扩展新的功能和特性。  
 
 ## 环境要求  
 
@@ -29,14 +29,30 @@
 
 1.  **克隆仓库:**  
 
+    你可以选择以下方式克隆仓库：  
+
+    *   **HTTPS:**  
+        ```bash  
+        git clone https://github.com/DICELIST/my_gemini_chatbot.git  
+        ```  
+    *   **SSH:**  
+        ```bash  
+        git clone git@github.com:DICELIST/my_gemini_chatbot.git  
+        ```  
+    *   **GitHub CLI:**  
+        ```bash  
+        gh repo clone DICELIST/my_gemini_chatbot  
+        ```  
+
+    选择你喜欢的方式克隆仓库。  
+
+2.  **进入项目目录:**  
+
     ```bash  
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git  
-    cd YOUR_REPOSITORY_NAME  
+    cd my_gemini_chatbot  
     ```  
 
-    *   请将 `YOUR_USERNAME` 替换为你的 GitHub 用户名，并将 `YOUR_REPOSITORY_NAME` 替换为你的仓库名称。  
-
-2.  **创建并激活虚拟环境 (推荐):**  
+3.  **创建并激活虚拟环境 (推荐):**  
 
     ```bash  
     python -m venv venv  
@@ -46,7 +62,7 @@
 
     使用虚拟环境可以隔离项目依赖，避免与其他 Python 项目的依赖冲突。  
 
-3.  **安装依赖:**  
+4.  **安装依赖:**  
 
     ```bash  
     pip install -r requirements.txt  
@@ -71,21 +87,9 @@
 
     运行 `main.py` 将启动控制台版本的聊天机器人。  
 
-*   **网页版本 (使用 Flask):**  
+*   **网页版本 (使用 Flask 或 Streamlit):**  
 
-    1.  确保你已经安装了 `flask`。  
-    2.  运行 Flask 应用 (具体运行方式取决于你的 Flask 应用代码，通常会有一个 `app.py` 或类似的入口文件)。  
-
-*   **网页版本 (使用 Streamlit):**  
-
-    1.  确保你已经安装了 `streamlit`。  
-    2.  运行 Streamlit 应用：  
-
-        ```bash  
-        streamlit run your_streamlit_app.py  
-        ```  
-
-        *   将 `your_streamlit_app.py` 替换为你的 Streamlit 应用的文件名。  
+    网页版本的运行方式取决于你选择的框架 (`flask` 或 `streamlit`) 和你的具体代码实现。 请参考相应的框架文档和你的代码注释来了解如何运行网页应用。  通常，你需要运行一个 `app.py` 文件 (Flask) 或者使用 `streamlit run your_streamlit_app.py` 命令 (Streamlit)。  
 
 ##  .gitignore 文件 (重要!)  
 
